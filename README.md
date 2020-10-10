@@ -25,10 +25,9 @@ $ git clone https://github.com/Anderson-Chiang/rubbish-talk.git
 $ cd rubbish-talk
 ```
 
-安裝 npm 相關套件
+安裝 npm 套件
 ```
-$ npm i express express-handlebars
-$ npm i body-parser
+$ npm i
 ```
 
 安裝 nodemon 套件，並啟動伺服器，執行 app.js 檔案
