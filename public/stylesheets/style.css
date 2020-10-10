@@ -1,0 +1,11 @@
+img {
+  width: auto;
+  height: 300px;
+  margin: 20px;
+  display: block;
+}
+
+#rubbish-talk {
+  font-size: 18px;
+  font-weight: bolder;
+}

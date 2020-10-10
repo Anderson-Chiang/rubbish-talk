@@ -1,0 +1,34 @@
+<div class="container-fluid py-3">
+  <h1 class="card-title text-center">你想對誰說幹話? <i class="far fa-comment-dots"></i></h1>
+  <form action="/" method="POST">
+    <div class="d-flex flex-row justify-content-center mb-3">
+      <div class="text-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg" class="rounded" alt="angry-developer">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="job" id="developer" value="developer" {{#if options.developer}}checked{{/if}}>
+          <label class="form-check-label" for="developer">工程師</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" class="rounded" alt="angry-designer">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="job" id="designer" value="designer" {{#if options.designer}}checked{{/if}}>
+          <label class="form-check-label" for="designer">設計師</label>
+        </div>
+      </div>
+      <div class="text-center">
+        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" class="rounded" alt="angry-founder">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="job" id="founder" value="founder" {{#if options.founder}}checked{{/if}}>
+          <label class="form-check-label" for="founder">創業家</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-start mt-5 pl-5">
+      <button type="submit" class="btn btn-dark mr-4">產生幹話</button>
+      {{#if options.expression}}
+      <textarea class="form-control col-10" name="rubbish-talk" id="rubbish-talk" rows="3" readonly="readonly">{{options.expression}}</textarea>
+      {{/if}}
+    </div>
+  </form>
+</div>
