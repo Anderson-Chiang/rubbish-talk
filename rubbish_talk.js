@@ -30,15 +30,15 @@ function rubbishTalkGenerator (job) {
   switch (job) {
     case 'developer':
       options.expression = '工程師' + sample(task.developer)
-      options.developer = 'on'
+      options.developer = 'true'
       break
     case 'designer':
       options.expression = '設計師' + sample(task.designer)
-      options.designer = 'on'
+      options.designer = 'true'
       break
     case 'founder':
       options.expression = '創業家' + sample(task.founder)
-      options.founder = 'on'
+      options.founder = 'true'
       break
   }
 
